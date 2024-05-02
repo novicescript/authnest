@@ -5,7 +5,10 @@
   "main": "app.js",
   "type": "module",
   "scripts": {},
-  "repository": "https://github.com/novicescript/authnest.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novicescript/authnest.git"
+  },
   "author": "Upendra Dev",
   "license": "MIT",
   "dependencies": {
