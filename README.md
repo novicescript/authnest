@@ -55,6 +55,10 @@ authFunction();
 
 For more detailed documentation and examples, please refer to the <a href="#">API</a> documentation.
 
-### License
+## License
 
 This package is licensed under the MIT License. See the <a>LICENSE</a> file for details.
+
+## Keywords
+
+authentication, authorization
