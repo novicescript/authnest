@@ -17,12 +17,13 @@ You can install the package via npm:
 
 ```bash
 npm install authnest
+
 ```
 
 ## Usage
 
 ```javascript
-const { registerUser } = require("user-registration-package");
+const { registerUser } = require("authnest");
 
 // Example usage:
 const userData = {
@@ -58,7 +59,3 @@ For more detailed documentation and examples, please refer to the <a href="#">AP
 ## License
 
 This package is licensed under the MIT License. See the <a>LICENSE</a> file for details.
-
-## Keywords
-
-authentication, authorization
