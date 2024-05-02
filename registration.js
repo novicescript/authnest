@@ -4,7 +4,7 @@ import {
   sanitizeUsername,
   validateEmail,
   validatePassword,
-} from "./utils/helperFunctions.js";
+} from "./utils/index.js";
 
 export const registerUser = async (userData) => {
   try {
