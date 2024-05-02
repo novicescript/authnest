@@ -1,0 +1,16 @@
+{
+  "name": "authnest",
+  "version": "0.0.1",
+  "description": "An npm package to make authentication and authorization easy with authnest",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {},
+  "repository": "https://github.com/novicescript/authnest.git",
+  "author": "Upendra Dev",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "nanoid": "^5.0.7",
+    "uuid": "^9.0.1"
+  }
+}
