@@ -1,3 +1,4 @@
-import { registerUser } from "./registration.js";
+import { registerUser } from "./auth/registration.js";
+import { setDataBaseConfig } from "./configs/dbConfig.js";
 
-export { registerUser };
+export { registerUser, setDataBaseConfig };

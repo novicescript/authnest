@@ -1,35 +1,65 @@
 # Authnest
 
-### NOTE: [STILL IN DEVELOPMENT MODE...]
+AuthNest is a comprehensive authentication and user management package designed to provide secure and flexible user authentication and management solutions for web applications. It offers a robust and flexible solution for implementing authentication and user management functionalities in web applications, prioritizing security, usability, and customization.
 
-This npm package provides a simple and secure solution for user registration in Node.js applications. It allows developers to easily implement user registration functionality, requiring username, email, and password inputs from users.
+### Features
 
-## Features
+1. User Registration: Added user registration that allows users to sign up for their application. This includes:
 
-- **User Registration**: Implement user registration functionality with ease.
-- **Input Validation**: Validate username, email, and password inputs to ensure data integrity.
-- **Secure Password Storage**: Utilize secure password hashing to protect user passwords.
-- **Flexibility**: Customize registration process and integrate with various databases.
+- Input validation for email, password, and username.
+- Password hashing for storing passwords securely.
 
-## Installation
+##### Coming Soon...
+
+more features
+
+### Installation
 
 You can install the package via npm:
 
 ```bash
 npm install authnest
-
 ```
 
-## Usage
+### Usage
+
+#### 1. Set Database Configuration
+
+Before using the authentication and user registration functionalities, you need to set up the database configuration.
 
 ```javascript
-const { registerUser } = require("authnest");
+import { setDataBaseConfig } from "authnest";
+
+// Define database configuration
+// FOR POSTGRESQL
+const dbConfig = {
+  connectionString: "postgres://postgres:admin@localhost:5432/mydb",
+};
+
+// FOR MONGODB
+const dbConfig = {
+  connectionString: "postgres://postgres:admin@localhost:5432/mydb",
+};
+
+setDataBaseConfig("postgresql | mongodb", dbConfig.connectionString);
+```
+
+#### Optional:
+
+- If you are going to use PostgreSql than make sure you have created db and table with name users in your system || server.
+
+#### 2. User Registration
+
+After setting up the database configuration, you can register new users.
+
+```javascript
+import { registerUser } from "authnest";
 
 // Example usage:
 const userData = {
   username: "john_doe",
   email: "john@example.com",
-  password: "password123",
+  password: "Password123",
 };
 
 registerUser(userData)
